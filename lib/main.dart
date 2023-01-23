@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moda_app_ui/helper/constants/constansts.dart';
 import 'package:moda_app_ui/ui/home_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const HomePage()
     );
   }
 }
