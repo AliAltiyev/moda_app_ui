@@ -14,6 +14,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   late TabController tabController;
 
+  var buttonColors = Colors.red;
+
   @override
   void initState() {
     super.initState();
@@ -152,15 +154,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               elevation: MaterialStateProperty.all(0)),
           onPressed: () {},
           child: Container(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
                 borderRadius: const BorderRadius.all(Radius.circular(20)),
-                gradient: LinearGradient(colors: [
-                  Colors.orange,
-                  Colors.red,
-                  Colors.redAccent,
-                  Colors.pinkAccent,
-                  Colors.orange
-                ])),
+                color: buttonColors),
             child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
               child: Text(
